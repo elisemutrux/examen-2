@@ -3,6 +3,11 @@
 // ==================================== */
 
 :root {
+  --blue: #168BF6;
+  --red: #CB0505;
+  --blue-dark: #054580;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 /* ====================================
@@ -26,6 +31,7 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  margin: 25px;
 }
 
 a {
@@ -39,20 +45,54 @@ video {
   vertical-align: middle;
 }
 
-.row + .row {
+/* .row + .row {
   margin-top: 16px;
 }
 
 .row > .col,
 .row > [class^=col-] {
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 12px;http://127.0.0.1:5500/img/logo-super-mario-land.png
   background-color: rgba(86, 61, 124, .15);
   border: 1px solid rgba(86, 61, 124, .2);
-}
+} */
 
 @media (max-width: 992px) {
   .disappearance-mobile {
     display: none;
   }
+
+  .book {
+    font-size: 12px;
+  }
+}
+
+.logo-header {
+  max-width: 320px;
+  padding-top: 9px;
+}
+
+.book {
+  background-color: var(--blue);
+  padding: 9px 23px;
+  display:inline-block;
+  color: var(--white);
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 4px 4px 0px 0px var(--black)
+}
+
+.book-wrapper {
+  text-align:right;
+}
+
+.navigation-header a {
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 20px;
+}
+
+.navigation-header {
+  text-align:right;
+  padding-top: 10px;
 }
