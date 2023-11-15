@@ -155,7 +155,6 @@ p.intro {
 p.a-propos-texte {
   color: var(--black);
   text-align: center;
-  font-family: Inter;
   font-size: 14px;
   font-weight: 400;
   margin-top: 20px;
@@ -169,6 +168,7 @@ p.a-propos-texte {
 
 .event {
   background: var(--blue-dark);
+  padding: 0 10px;
 }
 
 .event h2 {
@@ -181,8 +181,77 @@ p.a-propos-texte {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 37px;
-  margin-left: 15px;
   margin-bottom: 26px;
+}
+
+.button-event {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 10px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 5px 5px 0px 0px #000;
+  text-align: center;
+  padding: 6px 111px;
+  margin-bottom: 34px;
+}
+
+.button-event-bottom {
+  margin-top: 14px;
+  margin-bottom: 41px;
+}
+
+.content-event {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 16px;
+}
+
+.box-event {
+  position: relative;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.age {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.description-event {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.golden-event {
+  position: absolute;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  margin: 16px;
+  border-radius: 30px;
+  border: 3px solid var(--white);
+  background: rgba(0, 0, 0, 0.54);
+  padding: 8px 23px;
+}
+
+.img-event {
+  aspect-ratio: 1.12;
+  object-fit: cover;
+  filter: brightness(0.3);
+  border-radius: 25px;
+  border: 3px solid var(--black);
 }
 
 @media (max-width: 992px) {
