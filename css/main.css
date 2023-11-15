@@ -3,8 +3,8 @@
 // ==================================== */
 
 :root {
-  --blue: #168BF6;
-  --red: #CB0505;
+  --blue: #168bf6;
+  --red: #cb0505;
   --blue-dark: #054580;
   --white: #ffffff;
   --black: #000000;
@@ -31,8 +31,7 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
-  margin: 25px 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -58,7 +57,6 @@ video {
   border: 1px solid rgba(86, 61, 124, .2);
 } */
 
-
 .logo-header {
   max-width: 320px;
   padding-top: 9px;
@@ -67,7 +65,7 @@ video {
 .book {
   background-color: var(--blue);
   padding: 9px 23px;
-  display:inline-block;
+  display: inline-block;
   color: var(--white);
   border-radius: 10px;
   font-size: 20px;
@@ -76,7 +74,7 @@ video {
 }
 
 .book-wrapper {
-  text-align:right;
+  text-align: right;
   margin-right: 10px;
 }
 
@@ -87,12 +85,104 @@ video {
 }
 
 .navigation-header {
-  text-align:right;
+  text-align: right;
   padding-top: 10px;
 }
 
 .burger-menu {
   margin-top: 8px;
+}
+
+.header {
+  position: relative;
+}
+
+.nav-header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1 {
+  color: var(--white);
+  text-align: center;
+  font-family: Lilita One;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 3.42px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.discover {
+  background: var(--white);
+  padding: 6.5px 40px;
+  text-align: center;
+  color: var(--blue);
+  border-radius: 9px;
+  box-shadow: 5px 5px 0px 0px #000;
+  margin-top: 56px;
+  font-size: 12px;
+  align-self: center;
+}
+
+p.intro {
+  color: var(--red);
+  font-family: Lilita One;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+  opacity: 0.4;
+  text-align: center;
+  margin-top: 39px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+p.a-propos-texte {
+  color: var(--black);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 47px;
+}
+
+.a-propos {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.event {
+  background: var(--blue-dark);
+}
+
+.event h2 {
+  color: var(--white);
+  font-family: Lilita One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-left: 15px;
+  margin-bottom: 26px;
 }
 
 @media (max-width: 992px) {
@@ -101,16 +191,14 @@ video {
   }
 
   .navigation-header {
-    display:none;
+    display: none;
   }
 }
 
 @media (max-width: 695px) {
-
   .book {
     font-size: 12px;
     padding: 5px 9px;
-    border-radius: 5px
   }
 
   .logo-header {
@@ -120,16 +208,65 @@ video {
 
 @media (min-width: 992px) {
   .burger-menu {
-    display:none;
+    display: none;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .discover {
+    font-size: 16px;
+  }
+
+  p.a-propos-texte {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1740px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .discover {
+    font-size: 20px;
+    padding: 18px 64px;
+    margin-top: 100px;
+    border-radius: 15px;
+  }
+
+  p.a-propos-texte {
+    font-size: 28px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 104px;
+  }
+
+  p.intro {
+    margin-top: 92px;
   }
 }
 
 @media (max-width: 1260px) {
   .navigation-header a {
     font-size: 14px;
+    margin-left: 20px;
   }
 
   .book {
     font-size: 16px;
+    padding: 7px 15px;
+  }
+}
+
+@media (min-width: 658px) {
+  .video-mobile {
+    display: none;
+  }
+}
+@media (max-width: 657px) {
+  .video-desktop {
+    display: none;
   }
 }
