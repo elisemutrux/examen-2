@@ -71,6 +71,12 @@ video {
   font-size: 20px;
   box-shadow: 4px 4px 0px 0px var(--black);
   white-space: nowrap;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.book:hover {
+  box-shadow: none;
+  transform: translate(4px, 4px);
 }
 
 .book-wrapper {
@@ -82,6 +88,11 @@ video {
   text-decoration: none;
   margin-left: 28px;
   font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navigation-header a:hover {
+  color: var(--red);
 }
 
 .navigation-header {
@@ -136,6 +147,12 @@ h1 {
   margin-top: 56px;
   font-size: 12px;
   align-self: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.discover:hover {
+  box-shadow: none;
+  transform: translate(5px, 5px);
 }
 
 p.intro {
@@ -200,6 +217,12 @@ h2.title-dish {
   text-align: center;
   padding: 6px 111px;
   margin-bottom: 34px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.button-event:hover {
+  box-shadow: none;
+  transform: translate(5px, 5px);
 }
 
 .button-event-bottom {
@@ -257,6 +280,12 @@ h2.title-dish {
   filter: brightness(0.3);
   border-radius: 25px;
   border: 3px solid var(--black);
+  transition: 0.5s;
+}
+
+.img-event:hover {
+  filter: brightness(1);
+  transition: 0.5s;
 }
 
 .dish {
@@ -324,14 +353,47 @@ footer p {
 
 .copyright {
   text-align: end;
+  opacity: 0.5;
 }
 
-.horaire-resto {
+.horaire-resto,
+.jour-resto {
   margin: 0;
 }
 
 .icon {
   margin-bottom: 15px;
+  width: 32px;
+  height: 32px;
+}
+
+.jour-resto {
+  font-weight: 600;
+}
+
+.button-footer {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 9px 23px;
+  max-width: fit-content;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px 0px #000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.button-footer:hover {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+.email-enter {
+  border-radius: 10px;
+  background: #fc7a7a;
+  max-width: fit-content;
+  padding: 8px 94px 8px 18px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 992px) {
@@ -425,6 +487,16 @@ footer p {
   .logo-footer {
     margin-top: 86px;
     margin-bottom: 40px;
+  }
+
+  .box-icon {
+    display: flex;
+    gap: 26px;
+    margin-top: 20px;
+  }
+
+  .copyright {
+    text-align: start;
   }
 }
 
