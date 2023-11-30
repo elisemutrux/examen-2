@@ -73,6 +73,7 @@ video {
   box-shadow: 4px 4px 0px 0px var(--black);
   white-space: nowrap;
   transition: box-shadow 0.3s, transform 0.3s;
+  align-items: center;
 }
 
 .book:hover {
@@ -103,6 +104,8 @@ video {
 
 .burger-menu {
   margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header {
@@ -131,7 +134,7 @@ h1 {
   color: var(--white);
   text-align: center;
   font-family: Lilita One;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   letter-spacing: 3.42px;
   text-transform: uppercase;
@@ -219,6 +222,9 @@ h2.title-dish {
   padding: 6px 111px;
   margin-bottom: 34px;
   transition: box-shadow 0.3s, transform 0.3s;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .button-event:hover {
@@ -405,11 +411,14 @@ footer p {
   padding: 8px 94px 8px 18px;
   margin-bottom: 0;
   margin-right: 15px;
+  font-size: 12px;
+  display: inline-block;
 }
 
 .box-news {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 992px) {
@@ -558,7 +567,7 @@ footer p {
   }
 
   .book {
-    font-size: 16px;
+    font-size: 15px;
     padding: 7px 15px;
   }
 }
