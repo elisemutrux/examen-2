@@ -439,6 +439,17 @@ footer p {
   background: #ccc;
   text-align: right;
   z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
 @media (max-width: 992px) {
@@ -475,7 +486,8 @@ footer p {
 }
 
 @media (min-width: 992px) {
-  .burger {
+  .burger,
+  .menu {
     display: none;
   }
 
