@@ -101,12 +101,13 @@ video {
   text-align: right;
   padding-top: 10px;
 }
-
-.burger-menu {
+/* 
+.burger {
   margin-top: 8px;
   display: flex;
   justify-content: flex-end;
-}
+  align-items: flex-end;
+} */
 
 .header {
   position: relative;
@@ -421,6 +422,25 @@ footer p {
   flex-wrap: wrap;
 }
 
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 50px;
+  background: #ccc;
+  text-align: right;
+  z-index: 999;
+}
+
 @media (max-width: 992px) {
   .disappearance-mobile {
     display: none;
@@ -455,7 +475,7 @@ footer p {
 }
 
 @media (min-width: 992px) {
-  .burger-menu {
+  .burger {
     display: none;
   }
 
