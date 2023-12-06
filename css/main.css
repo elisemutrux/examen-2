@@ -463,7 +463,6 @@ footer p {
   text-align: right;
   z-index: 999;
   pointer-events: none;
-  transition: opacity 0.3s;
   transform: translateX(100%);
   transition: transform 0.3s;
 }
@@ -471,6 +470,25 @@ footer p {
 .menu.is-active {
   pointer-events: auto;
   transform: translateX(0);
+}
+
+.background-burger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #282828;
+  opacity: 0;
+  z-index: 998;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.background-burger-menu.is-active {
+  opacity: 0.9;
+  background: #282828;
+  pointer-events: all;
 }
 
 .burger div {
