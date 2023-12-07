@@ -318,10 +318,12 @@ h2.title-dish {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 22px;
+  transition: 0.2s;
 }
 
 .dish h3:hover {
   font-size: 25px;
+  transition: 0.2s;
 }
 
 .dish p {
@@ -370,7 +372,7 @@ footer p {
 
 .horaire-resto,
 .jour-resto {
-  margin: 0;
+  margin: 5;
 }
 
 .icon {
@@ -434,65 +436,10 @@ footer p {
 .burger div {
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: #000;
-}
-
-.burger div:nth-child(1) {
-  top: 0;
-}
-
-.burger div:nth-child(2) {
-  top: 8px;
-}
-
-.burger div:nth-child(3) {
-  top: 16px;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 63px;
-  padding-right: 25px;
-  padding-left: 80px;
-  background: #282828;
-  color: var(--white);
-  text-align: right;
-  z-index: 999;
-  pointer-events: none;
-  transform: translateX(100%);
-  transition: transform 0.3s;
-}
-
-.menu.is-active {
-  pointer-events: auto;
-  transform: translateX(0);
-}
-
-.background-burger-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #282828;
-  opacity: 0;
-  z-index: 998;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-
-.background-burger-menu.is-active {
-  opacity: 0.9;
-  background: #282828;
-  pointer-events: all;
-}
-
-.burger div {
   transition: transform 0.3s, opacity 0.3s;
+  border-radius: 5px;
 }
 
 .burger div:nth-child(1) {
@@ -548,9 +495,50 @@ footer p {
   width: 32px;
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 63px;
+  padding-right: 25px;
+  padding-left: 80px;
+  background: #282828;
+  color: var(--white);
+  text-align: right;
+  z-index: 999;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.menu.is-active {
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
 .menu a {
   margin-bottom: 20px;
   display: inline-block;
+}
+
+.background-burger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #282828;
+  opacity: 0;
+  z-index: 998;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.background-burger-menu.is-active {
+  opacity: 0.9;
+  background: #282828;
+  pointer-events: all;
 }
 
 @media (max-width: 992px) {
