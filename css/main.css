@@ -546,7 +546,7 @@ footer p {
   border-radius: 10px;
   background: #fc7a7a;
   max-width: fit-content;
-  padding: 8px 94px 8px 18px;
+  padding: 10px 94px 10px 18px;
   margin-bottom: 0;
   margin-right: 15px;
   font-size: 12px;
@@ -577,6 +577,11 @@ footer p {
 
   .dish {
     margin-bottom: 50px;
+  }
+
+  .logo-footer {
+    margin-top: 45px;
+    margin-bottom: 12px;
   }
 }
 
