@@ -352,9 +352,8 @@ footer p {
   margin-bottom: 17px;
 }
 
-.logo-footer {
-  margin-bottom: 11px;
-  margin-top: 33px;
+.logo-footer img {
+  height: 25px;
 }
 
 .subtitel-footer {
